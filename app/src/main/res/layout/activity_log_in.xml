@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    tools:context=".LogInActivity">
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="50dp"
+        android:text="Lock !t"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appName"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="-30dp"
+        android:text="A personalized Notes &amp; Password Manager"
+        android:textColor="@color/white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/box"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/email_logIn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/email_box_bg"
+            android:backgroundTint="@color/purple_200"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColorHint="#EEEEEE" />
+
+
+        <EditText
+            android:id="@+id/password_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/email_box_bg"
+            android:backgroundTint="@color/purple_200"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColorHint="#EEEEEE" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Forget password?"
+            android:textColor="@color/purple_200" />
+
+        <TextView
+            android:id="@+id/toSignUp_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Don't have account? SignUp please"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/purple_200" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logIn_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FFCDD2"
+            android:text="LogIn"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_200"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="5dp"
+    android:layout_margin="3dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/notesTitle_IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title of the notes"
+            android:textColor="@color/purple_200"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/notesIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:layout_marginStart="5dp"
+            android:maxLines="2"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

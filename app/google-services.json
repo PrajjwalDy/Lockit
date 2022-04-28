@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "209465064155",
+    "project_id": "lock-t",
+    "storage_bucket": "lock-t.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209465064155:android:3e2b7a2a2bfba3a72f6afe",
+        "android_client_info": {
+          "package_name": "com.example.lockit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209465064155-lh8brcf44mujce8n89j3d7943lpc9lhs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9_tqAUabPFJKn0Nqonr75Bjy8_hYzo_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209465064155-lh8brcf44mujce8n89j3d7943lpc9lhs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
