@@ -46,20 +46,31 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/emptyNotes"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:lottie_rawRes="@raw/empty_lockit"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        app:lottie_loop="true"/>
+
     <TextView
         android:id="@+id/instructionTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
         android:visibility="gone"
+        android:layout_marginTop="100dp"
         android:text="Click on + icon to add new notes"
          />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/notesRV"
         android:layout_width="match_parent"
-        android:visibility="visible"
         android:layout_height="match_parent" />
 
 

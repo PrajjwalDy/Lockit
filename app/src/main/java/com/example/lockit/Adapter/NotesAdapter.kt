@@ -1,6 +1,7 @@
 package com.example.lockit.Adapter
 
 import android.content.Context
+import android.content.Intent
 import android.speech.tts.TextToSpeech
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import android.widget.TextView
 import androidx.annotation.NonNull
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lockit.Model.NotesModel
+import com.example.lockit.NotesViewActivity
 import com.example.lockit.R
 
 class NotesAdapter(private val mContext:Context,
@@ -32,6 +34,12 @@ class NotesAdapter(private val mContext:Context,
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(mNotes[position])
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(mContext,NotesViewActivity::class.java)
+            intent.putExtra("notesId",mNotes[position].noteId)
+            mContext.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {

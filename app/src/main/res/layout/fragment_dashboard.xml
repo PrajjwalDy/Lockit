@@ -46,8 +46,32 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/emptyNotes_password"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:lottie_rawRes="@raw/empty_lockit"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        app:lottie_loop="true"/>
 
+    <TextView
+        android:id="@+id/instructionTV_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="100dp"
+        android:text="Click on + icon to add new or generate password"
+        />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/passwordRV"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>

@@ -34,12 +34,21 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:lottie_rawRes="@raw/note_taking"
+        app:lottie_autoPlay="true"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        app:lottie_loop="true"/>
+
     <EditText
         android:id="@+id/notesTitel_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:backgroundTint="@color/purple_200"
+       android:background="@drawable/email_box_bg"
         android:hint="Title"
         android:textSize="16sp"
         android:padding="5dp"/>
@@ -49,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_margin="10dp"
-        android:backgroundTint="@color/purple_200"
+        android:background="@drawable/email_box_bg"
         android:textSize="16sp"
         android:hint="your note here"
         android:padding="5dp"/>
@@ -65,8 +74,10 @@
             android:layout_height="40dp"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:textColor="@color/purple_200"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple_200"
             android:text="Save"
+            android:textAllCaps="false"
             android:background="@drawable/email_box_bg"/>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -77,10 +88,18 @@
             android:layout_weight="1"
             android:text="Attach Media"
             android:textAllCaps="false"
-            android:textColor="@color/purple_200"
+            android:backgroundTint="@color/purple_200"
+            android:textColor="@color/white"
             android:background="@drawable/email_box_bg"/>
 
     </LinearLayout>
 
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/mediaImageView"/>
 
 </LinearLayout>

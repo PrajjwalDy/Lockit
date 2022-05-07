@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.notifications.NotificationsFragment">
+    tools:context=".NotesViewActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -25,67 +26,49 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:text="Profile"
+                android:text="Viewing Note"
                 android:textColor="@color/purple_200"
-                android:textSize="18dp"
-                android:textStyle="bold" />
+                android:textSize="18dp" />
+
 
             <ImageView
-                android:id="@+id/menu"
+                android:id="@+id/deleteNote"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_baseline_delete_24"
                 android:layout_centerVertical="true"
-                android:src="@drawable/menu"
-                android:layout_marginEnd="10dp"/>
-
-
+                android:layout_margin="10dp"/>
 
         </RelativeLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        app:lottie_rawRes="@raw/profile"
-        app:lottie_autoPlay="true"
-        android:layout_margin="10dp"
-        android:layout_gravity="center_horizontal"
-        app:lottie_loop="true"/>
-
     <TextView
-        android:id="@+id/userFullName"
+        android:id="@+id/notesTitle_NA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:layout_gravity="center_horizontal"
-        android:textColor="@color/black"
-        android:text="Full Name"/>
-
-    <TextView
-        android:id="@+id/userEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textSize="16sp"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/black"
-        android:text="Full Name"/>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:textStyle="bold"
-        android:textSize="25sp"
-        android:layout_gravity="center_horizontal"
+        android:text="Title"
+        android:layout_margin="20dp"
         android:textColor="@color/purple_200"
-        android:text="Lock!t"/>
+        android:textSize="18sp"
+        />
 
+    <TextView
+        android:id="@+id/notes_NA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notes"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
 
-
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:background="@drawable/email_box_bg"
+        android:id="@+id/imageMedia"/>
 </LinearLayout>

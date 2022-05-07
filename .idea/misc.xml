@@ -9,11 +9,20 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/activity_add_password.xml" value="0.25677083333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/activity_log_in.xml" value="0.264" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/activity_main.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/activity_notes_view.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/activity_password_generater_acitvity.xml" value="0.24427083333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/activity_privacy_policy.xml" value="0.25677083333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/activity_sign_up.xml" value="0.25677083333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/add_password_dialog.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/display_password_dialog.xml" value="0.25677083333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/fragment_dashboard.xml" value="0.25677083333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/fragment_home.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/fragment_notifications.xml" value="0.2552083333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/menu_dialog.xml" value="0.25677083333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/notes_item_layout.xml" value="0.21978021978021978" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/pass_pin_dialog.xml" value="0.24427083333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/password_item_layout.xml" value="0.24427083333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/layout/progress_dialog.xml" value="0.25677083333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Lockit/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25677083333333334" />
       </map>
     </option>

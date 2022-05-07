@@ -9,7 +9,7 @@
 
 
     <LinearLayout
-        android:id="@+id/addPassword_ll"
+        android:id="@+id/default_ll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
@@ -19,8 +19,7 @@
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/add_password"
-
+            android:src="@drawable/key"
             app:tint="@color/purple_200" />
 
         <TextView
@@ -29,12 +28,12 @@
             android:textSize="16sp"
             android:layout_margin="5dp"
             android:textColor="@color/purple_200"
-            android:text="Add Password"/>
+            android:text="Defalut Pin"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/generatePassword_ll"
+        android:id="@+id/privacyPolicy_ll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
@@ -44,7 +43,7 @@
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/generate_password"
+            android:src="@drawable/shield"
             app:tint="@color/purple_200" />
 
         <TextView
@@ -53,7 +52,30 @@
             android:textSize="16sp"
             android:layout_margin="5dp"
             android:textColor="@color/purple_200"
-            android:text="Generate Password"/>
+            android:text="Privacy Policy"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logout_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/purple_200"
+            android:text="Logout"/>
 
     </LinearLayout>
 
