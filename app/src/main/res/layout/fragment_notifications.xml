@@ -74,6 +74,17 @@
         android:textColor="@color/black"
         android:text="Full Name"/>
 
+    <TextView
+        android:id="@+id/userPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:text="Full Name"/>
+
 
     <TextView
         android:layout_width="wrap_content"

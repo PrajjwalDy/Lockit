@@ -54,15 +54,28 @@
         android:textSize="18sp"
         />
 
-    <TextView
+    <EditText
         android:id="@+id/notes_NA"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Notes"
         android:layout_margin="20dp"
+        android:background="@drawable/email_box_bg"
+        android:padding="5dp"
         android:textColor="@color/black"
         android:textSize="16sp"
         />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/doneNotes"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:background="@color/purple_200"
+        android:textAllCaps="false"
+        android:textSize="16sp"/>
 
     <ImageView
         android:layout_width="match_parent"

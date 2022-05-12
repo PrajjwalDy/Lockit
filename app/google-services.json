@@ -1,15 +1,16 @@
 {
   "project_info": {
     "project_number": "209465064155",
+    "firebase_url": "https://lock-t-default-rtdb.firebaseio.com",
     "project_id": "lock-t",
     "storage_bucket": "lock-t.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:209465064155:android:3e2b7a2a2bfba3a72f6afe",
+        "mobilesdk_app_id": "1:209465064155:android:7cc86000d902e0642f6afe",
         "android_client_info": {
-          "package_name": "com.example.lockit"
+          "package_name": "com.global.lockit"
         }
       },
       "oauth_client": [
