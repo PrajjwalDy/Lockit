@@ -27,7 +27,7 @@ class AddNotesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_notes)
 
-        storagePostImageRef = FirebaseStorage.getInstance().reference.child("NotesMedia")
+        storagePostImageRef = FirebaseStorage.getInstance().reference.child("NotesImanges")
 
         saveNote_btn.setOnClickListener {
             addNotes()
