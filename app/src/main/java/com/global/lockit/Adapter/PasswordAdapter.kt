@@ -19,6 +19,7 @@ class PasswordAdapter(private val mContext: Context,
 
                           inner class ViewHolder(@NonNull itemView: View):RecyclerView.ViewHolder(itemView){
                               val title: TextView = itemView.findViewById(R.id.passwordTitle_IV) as TextView
+                              val delete: TextView = itemView.findViewById(R.id.deletePassword) as TextView
 
                               fun bind(list:PasswordModel){
                                   title.text = list.passTitle
@@ -32,6 +33,10 @@ class PasswordAdapter(private val mContext: Context,
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(mNotes[position])
+        
+        holder.deletePassword.setOnClickListener{
+          
+        }
 
         holder.itemView.setOnClickListener {
             val dialogView = LayoutInflater.from(mContext).inflate(R.layout.pass_pin_dialog, null)
