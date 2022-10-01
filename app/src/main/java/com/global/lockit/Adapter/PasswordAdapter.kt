@@ -11,6 +11,8 @@ import androidx.annotation.NonNull
 import androidx.recyclerview.widget.RecyclerView
 import com.global.lockit.Model.PasswordModel
 import com.global.lockit.R
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.display_password_dialog.view.*
 import kotlinx.android.synthetic.main.pass_pin_dialog.view.*
 
@@ -19,7 +21,6 @@ class PasswordAdapter(private val mContext: Context,
 
                           inner class ViewHolder(@NonNull itemView: View):RecyclerView.ViewHolder(itemView){
                               val title: TextView = itemView.findViewById(R.id.passwordTitle_IV) as TextView
-                              val delete: TextView = itemView.findViewById(R.id.deletePassword) as TextView
 
                               fun bind(list:PasswordModel){
                                   title.text = list.passTitle
@@ -33,10 +34,6 @@ class PasswordAdapter(private val mContext: Context,
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(mNotes[position])
-        
-        holder.deletePassword.setOnClickListener{
-          
-        }
 
         holder.itemView.setOnClickListener {
             val dialogView = LayoutInflater.from(mContext).inflate(R.layout.pass_pin_dialog, null)
@@ -48,6 +45,7 @@ class PasswordAdapter(private val mContext: Context,
 
             val pDialogView = LayoutInflater.from(mContext).inflate(R.layout.display_password_dialog,null)
             val pDialogBuilder = AlertDialog.Builder(mContext).setView(pDialogView)
+            //val pAlertDialog = pDialogBuilder.show()
 
 
             pDialogView.title_password_dialogBox.text = mNotes[position].passTitle
@@ -63,10 +61,23 @@ class PasswordAdapter(private val mContext: Context,
                     alertDialog.dismiss()
                 }
             }
+            pDialogView.removePassword.setOnClickListener {
+                removePassword(mNotes[position].passwordId!!)
+                //pAlertDialog.dismiss()
+            }
+
         }
     }
 
     override fun getItemCount(): Int {
         return mNotes.size
+    }
+
+    private fun removePassword(passwordId:String){
+        FirebaseDatabase.getInstance().reference.child("Passwords")
+            .child(FirebaseAuth.getInstance().currentUser!!.uid)
+            .child(passwordId)
+            .removeValue()
+        Toast.makeText(mContext,"Password removed success",Toast.LENGTH_SHORT).show()
     }
 }
